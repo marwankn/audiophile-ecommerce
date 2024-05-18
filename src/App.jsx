@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.scss";
-import { NavBar } from "./components/NavBar/NavBar";
+import NavBar from "./components/NavBar/NavBar";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import CategoriesPage from "./pages/CategoriesPage/CategoriesPage";

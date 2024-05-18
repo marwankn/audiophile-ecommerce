@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const HomePage = () => {
+  useEffect(() => {
+    document.title = "Audiophile | Home";
+  }, []);
+
   return <div>HomePage</div>;
 };
 

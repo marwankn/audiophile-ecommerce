@@ -1,6 +1,6 @@
 @use "./typography";
 @use "./resets";
-@use "./media-queries";
+@use "./media-queries" as *;
 @use "./variables" as *;
 
 .button {
@@ -131,5 +131,19 @@ input {
 
   label {
     flex: 1;
+  }
+}
+
+.container {
+  padding: 0 2.4rem;
+
+  @include tablet {
+    padding: 0 3.9rem;
+  }
+
+  @include desktop {
+    padding: 0;
+    max-width: 111rem;
+    margin: 0 auto;
   }
 }
