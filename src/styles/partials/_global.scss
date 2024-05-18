@@ -1,0 +1,135 @@
+@use "./typography";
+@use "./resets";
+@use "./media-queries";
+@use "./variables" as *;
+
+.button {
+  width: 16rem;
+  height: 4.8rem;
+  flex-shrink: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.button1 {
+  @extend .subtitle;
+  @extend .button;
+
+  background-color: $main-color;
+  color: $text-light-color;
+
+  &:hover {
+    background-color: $main-light-color;
+  }
+}
+
+.button2 {
+  @extend .subtitle;
+  @extend .button;
+
+  background-color: $text-light-color;
+  color: $text-dark-color;
+  border: 1px solid $text-dark-color;
+
+  &:hover {
+    background-color: $text-dark-color;
+    color: $text-light-color;
+  }
+}
+
+.button3 {
+  @extend .subtitle;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  color: $text-dark-color;
+  opacity: 0.5;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.5rem;
+    height: 1rem;
+    background-image: url("/src/assets/images/shared/desktop/icon-arrow-right.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 1.33rem;
+  }
+
+  &:hover {
+    color: $main-color;
+  }
+}
+
+label {
+  color: $text-dark-color;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.0214rem;
+}
+
+input {
+  width: 30.9rem;
+  height: 5.6rem;
+  flex-shrink: 0;
+  border-radius: 0.8rem;
+  border: 1px solid $checkout-background;
+  background: $text-light-color;
+  padding: 0 2.4rem;
+  color: $text-dark-color;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.025rem;
+
+  &:focus {
+    border-color: $main-color;
+    outline: none;
+    caret-color: $main-color;
+  }
+
+  &[type="text"] {
+    &::placeholder {
+      opacity: 0.4;
+    }
+  }
+}
+
+.radio-button {
+  display: flex;
+  align-items: center;
+  width: 30.9rem;
+  height: 5.6rem;
+  border-radius: 0.8rem;
+  border: 1px solid $checkout-background;
+  background: $text-light-color;
+  color: $text-dark-color;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.025rem;
+
+  &:hover {
+    border-color: $main-color;
+  }
+
+  &.selected {
+    border-color: $main-color;
+  }
+
+  input {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 1.6rem;
+    accent-color: $main-color;
+  }
+
+  label {
+    flex: 1;
+  }
+}
