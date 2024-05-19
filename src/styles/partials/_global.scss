@@ -17,6 +17,7 @@
 
   background-color: $main-color;
   color: $text-light-color;
+  text-decoration: none;
 
   &:hover {
     background-color: $main-light-color;
@@ -30,6 +31,7 @@
   background-color: $text-light-color;
   color: $text-dark-color;
   border: 1px solid $text-dark-color;
+  text-decoration: none;
 
   &:hover {
     background-color: $text-dark-color;
@@ -44,6 +46,7 @@
   background-color: inherit;
   color: $text-dark-color;
   opacity: 0.5;
+  text-decoration: none;
 
   &::after {
     content: "";

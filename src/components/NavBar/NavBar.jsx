@@ -4,6 +4,7 @@ import logo from "../../assets/images/shared/desktop/logo.svg";
 import hamburgerMenu from "../../assets/images/shared/tablet/icon-hamburger.svg";
 import checkoutCart from "../../assets/images/shared/desktop/icon-cart.svg";
 import { NavLink } from "react-router-dom";
+import NavDropdownMenu from "../NavDropdownMenu/NavDropdownMenu";
 
 const NavBar = () => {
   return (
@@ -93,6 +94,7 @@ const NavBar = () => {
           />
         </div>
       </nav>
+      <NavDropdownMenu />
     </header>
   );
 };

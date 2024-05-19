@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "category": "headphones",
+    "imgPath": "/src/assets/images/shared/desktop/image-category-thumbnail-headphones.png"
+  },
+  {
+    "id": 2,
+    "category": "speakers",
+    "imgPath": "/src/assets/images/shared/desktop/image-category-thumbnail-speakers.png"
+  },
+  {
+    "id": 3,
+    "category": "earphones",
+    "imgPath": "/src/assets/images/shared/desktop/image-category-thumbnail-earphones.png"
+  }
+]
