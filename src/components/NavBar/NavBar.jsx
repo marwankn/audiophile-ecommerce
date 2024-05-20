@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavBar.scss";
 import logo from "../../assets/images/shared/desktop/logo.svg";
 import hamburgerMenu from "../../assets/images/shared/tablet/icon-hamburger.svg";
@@ -7,11 +7,13 @@ import { NavLink } from "react-router-dom";
 import NavDropdownMenu from "../NavDropdownMenu/NavDropdownMenu";
 
 const NavBar = () => {
+  const [menu, setMenu] = useState(false);
+
   return (
     <header>
       <nav className="container">
         <div className="navBar__mobile">
-          <img src={hamburgerMenu} alt="" />
+          <img src={hamburgerMenu} alt="" onClick={() => setMenu(!menu)} />
           <img src={logo} alt="Audiophile Logo" className="navBar__logo" />
           <img
             src={checkoutCart}
@@ -25,6 +27,7 @@ const NavBar = () => {
               src={hamburgerMenu}
               alt=""
               className="navBar__tablet-hamburger"
+              onClick={() => setMenu(!menu)}
             />
             <img src={logo} alt="Audiophile Logo" className="navBar__logo" />
           </div>
@@ -94,7 +97,7 @@ const NavBar = () => {
           />
         </div>
       </nav>
-      <NavDropdownMenu />
+      {menu ? <NavDropdownMenu menu={menu} setMenu={setMenu} /> : <></>}
     </header>
   );
 };

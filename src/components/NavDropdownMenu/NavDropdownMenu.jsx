@@ -4,10 +4,20 @@ import headphoneImg from "../../assets/images/shared/desktop/image-category-thum
 import menuData from "../../assets/data/menuData.json";
 import { Link, Navigate } from "react-router-dom";
 
-const NavDropdownMenu = () => {
+const NavDropdownMenu = ({ menu, setMenu }) => {
   return (
-    <div className="underlay">
-      <div className="navDropdownMenu">
+    <div
+      className="underlay"
+      onClick={() => {
+        setMenu(!menu);
+      }}
+    >
+      <div
+        className="navDropdownMenu"
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
+      >
         <div className="navDropdownMenu__container">
           {menuData.map((data) => {
             return (
@@ -20,7 +30,11 @@ const NavDropdownMenu = () => {
                   />
                 </div>
                 <h6 class="navDropdownMenu__title">{data.category}</h6>
-                <Link to={`/categories/${data.category}`} className="button3">
+                <Link
+                  to={`/categories/${data.category}`}
+                  className="button3"
+                  onClick={() => setMenu(false)}
+                >
                   Shop
                 </Link>
               </div>
