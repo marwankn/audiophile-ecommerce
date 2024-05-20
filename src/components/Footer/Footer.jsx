@@ -52,21 +52,33 @@ const Footer = () => {
               to="https://facebook.com"
               target="_blank"
             >
-              <img src={facebookIcon} alt="Facebook" />
+              <img
+                src={facebookIcon}
+                alt="Facebook"
+                className="footer__icon-img"
+              />
             </Link>
             <Link
               className="footer__icon"
               to="https://twitter.com"
               target="_blank"
             >
-              <img src={twitterIcon} alt="Twitter" />
+              <img
+                src={twitterIcon}
+                alt="Twitter"
+                className="footer__icon-img"
+              />
             </Link>
             <Link
               className="footer__icon"
               to="https://instagram.com"
               target="_blank"
             >
-              <img src={instagramIcon} alt="Instagram" />
+              <img
+                src={instagramIcon}
+                alt="Instagram"
+                className="footer__icon-img"
+              />
             </Link>
           </div>
         </div>
