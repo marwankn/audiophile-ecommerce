@@ -10,10 +10,8 @@ const HomepageHero = () => {
           <h4 className="hero__subtitle">new product</h4>
           <h1 className="hero__title">XX99 Mark II HeadphoneS</h1>
           <p className="hero__detail-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
-            vero doloribus id aliquam aperiam distinctio earum, enim neque
-            officiis. Amet, accusantium ea itaque laborum fuga a. Ipsa obcaecati
-            veniam neque?
+            Experience natural, lifelike audio and exceptional build quality
+            made for the passionate music enthusiast.
           </p>
           <Link className="hero__button" to="/categories/headphones">
             See product
