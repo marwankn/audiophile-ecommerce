@@ -3,6 +3,10 @@
 @use "./media-queries" as *;
 @use "./variables" as *;
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .button {
   width: 16rem;
   height: 4.8rem;
@@ -18,9 +22,14 @@
   background-color: $main-color;
   color: $text-light-color;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &:hover {
-    background-color: $main-light-color;
+  @include desktop {
+    &:hover {
+      background-color: $main-light-color;
+    }
   }
 }
 
@@ -33,9 +42,11 @@
   border: 1px solid $text-dark-color;
   text-decoration: none;
 
-  &:hover {
-    background-color: $text-dark-color;
-    color: $text-light-color;
+  @include desktop {
+    &:hover {
+      background-color: $text-dark-color;
+      color: $text-light-color;
+    }
   }
 }
 
@@ -60,8 +71,10 @@
     margin-left: 1.33rem;
   }
 
-  &:hover {
-    color: $main-color;
+  @include desktop {
+    &:hover {
+      color: $main-color;
+    }
   }
 }
 
