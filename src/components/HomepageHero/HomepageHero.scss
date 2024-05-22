@@ -6,12 +6,19 @@
   background: url("../../assets/images/home/mobile/image-header.jpg") no-repeat;
   background-size: cover;
   background-position-x: center;
-  background-position: bottom;
-  height: 65rem;
+  background-position: center;
+  max-height: 65rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include tablet {
+    background: url("../../assets/images/home/tablet/image-header.jpg")
+      no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 
   &__container {
     @extend .container;
