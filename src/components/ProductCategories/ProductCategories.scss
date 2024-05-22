@@ -2,28 +2,7 @@
 @use "../../styles/partials/media-queries" as *;
 @use "../../styles/partials/global";
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.underlay {
-  background-color: rgba($color: #000000, $alpha: 0.5);
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 2;
-  overflow-y: auto;
-  animation: fadeIn 0.5s ease-in both;
-  @include desktop {
-    display: none;
-  }
-}
-
-.navDropdownMenu {
+.productCategories {
   background-color: white;
   position: relative;
   padding-bottom: 5.3rem;
