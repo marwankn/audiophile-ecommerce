@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./NavBar.scss";
 import logo from "../../assets/images/shared/desktop/logo.svg";
 import hamburgerMenu from "../../assets/images/shared/tablet/icon-hamburger.svg";
@@ -8,6 +8,17 @@ import NavDropdownMenu from "../NavDropdownMenu/NavDropdownMenu";
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
+
+  useEffect(() => {
+    if (menu) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [menu]);
 
   return (
     <header>

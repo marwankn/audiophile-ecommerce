@@ -1,0 +1,62 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/media-queries" as *;
+@use "../../styles/partials/variables" as *;
+
+.hero {
+  background: url("../../assets/images/home/mobile/image-header.jpg") no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position: bottom;
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    @extend .container;
+    padding-top: 10.8rem;
+    padding-bottom: 11.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__subtitle {
+    @extend .overline;
+    color: white;
+    opacity: 0.4964;
+    margin-bottom: 1.6rem;
+  }
+
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+    letter-spacing: 0.1286rem;
+    text-transform: uppercase;
+    max-width: 32.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &__detail-text {
+    max-width: 32.8rem;
+    color: #fff;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin-bottom: 2.8rem;
+  }
+
+  &__button {
+    @extend .button1;
+  }
+}
