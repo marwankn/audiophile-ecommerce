@@ -53,7 +53,7 @@ const NavBar = () => {
           <ul className="navBar__desktop-menu">
             <li>
               <NavLink
-                exact
+                exact="true"
                 className={({ isActive }) =>
                   isActive
                     ? "navBar__desktop-menu-link--active"

@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="footer__nav">
             <ul className="footer__menu">
               <li>
-                <Link exact className="footer__menu-link" to="/">
+                <Link className="footer__menu-link" to="/">
                   Home
                 </Link>
               </li>

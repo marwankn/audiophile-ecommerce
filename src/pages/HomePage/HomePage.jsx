@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import HomepageHero from "../../components/HomepageHero/HomepageHero";
+import ProductCategories from "../../components/ProductCategories/ProductCategories";
 
 const HomePage = () => {
   useEffect(() => {
@@ -9,6 +10,7 @@ const HomePage = () => {
   return (
     <main>
       <HomepageHero />
+      <ProductCategories />
     </main>
   );
 };
