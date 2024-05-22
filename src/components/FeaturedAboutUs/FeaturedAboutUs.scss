@@ -1,0 +1,49 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/media-queries" as *;
+
+.featuredAboutUs {
+  @extend .container;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 6rem 0;
+
+  &__image {
+    content: url("../../assets/images/shared/mobile/image-best-gear.jpg");
+    border-radius: 0.8rem;
+
+    @include tablet {
+      content: url("../../assets/images/shared/tablet/image-best-gear.jpg");
+    }
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 57.3rem;
+  }
+
+  &__title {
+    text-align: center;
+    max-width: 35rem;
+
+    @include tablet {
+      max-width: 40rem;
+    }
+
+    &--highlight {
+      font: inherit;
+      color: $main-color;
+    }
+  }
+
+  &__text {
+    text-align: center;
+  }
+}
