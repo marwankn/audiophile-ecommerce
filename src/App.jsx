@@ -1,12 +1,11 @@
-import { useState } from "react";
-import "./App.scss";
-import NavBar from "./components/NavBar/NavBar";
 import { Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar/NavBar";
 import HomePage from "./pages/HomePage/HomePage";
 import CategoriesPage from "./pages/CategoriesPage/CategoriesPage";
 import ProductDetailsPage from "./pages/ProductDetails/ProductDetailsPage";
 import CheckoutPage from "./pages/CheckoutPage/CheckoutPage";
 import Footer from "./components/Footer/Footer";
+import "./App.scss";
 
 function App() {
   return (
