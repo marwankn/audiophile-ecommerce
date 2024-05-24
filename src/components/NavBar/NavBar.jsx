@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./NavBar.scss";
 import logo from "../../assets/images/shared/desktop/logo.svg";
 import hamburgerMenu from "../../assets/images/shared/tablet/icon-hamburger.svg";
 import checkoutCart from "../../assets/images/shared/desktop/icon-cart.svg";
-import { NavLink } from "react-router-dom";
 import NavDropdownMenu from "../NavDropdownMenu/NavDropdownMenu";
 
 const NavBar = () => {
@@ -23,32 +23,13 @@ const NavBar = () => {
   return (
     <header>
       <nav className="container">
-        <div className="navBar__mobile">
-          <img src={hamburgerMenu} alt="" onClick={() => setMenu(!menu)} />
-          <img src={logo} alt="Audiophile Logo" className="navBar__logo" />
+        <div className="navBar">
           <img
-            src={checkoutCart}
-            alt="Checkout Cart Logo"
-            className="navBar__checkoutCart"
+            src={hamburgerMenu}
+            alt="Menu"
+            onClick={() => setMenu(!menu)}
+            className="navBar__hamburger-menu"
           />
-        </div>
-        <div className="navBar__tablet">
-          <div className="navBar__tablet-menu">
-            <img
-              src={hamburgerMenu}
-              alt=""
-              className="navBar__tablet-hamburger"
-              onClick={() => setMenu(!menu)}
-            />
-            <img src={logo} alt="Audiophile Logo" className="navBar__logo" />
-          </div>
-          <img
-            src={checkoutCart}
-            alt="Checkout Cart Logo"
-            className="navBar__checkoutCart"
-          />
-        </div>
-        <div className="navBar__desktop">
           <img src={logo} alt="Audiophile Logo" className="navBar__logo" />
           <ul className="navBar__desktop-menu">
             <li>

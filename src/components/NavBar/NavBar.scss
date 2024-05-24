@@ -6,54 +6,26 @@ header {
 }
 
 .navBar {
-  &__checkoutCart {
+  height: 8.9rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr;
+  column-gap: 4.2rem;
+  align-items: center;
+  border-bottom: 1px rgba($color: #ffffff, $alpha: 0.104) solid;
+
+  &__hamburger-menu {
     cursor: pointer;
-  }
-  &__mobile {
-    height: 8.9rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px rgba($color: #ffffff, $alpha: 0.104) solid;
 
     @include tablet {
-      display: none;
-    }
-  }
-
-  &__tablet {
-    display: none;
-
-    @include tablet {
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 12.6rem;
-      border-bottom: 1px rgba($color: #ffffff, $alpha: 0.104) solid;
+      width: 1.6rem;
+      height: 1.5rem;
+      flex-shrink: 0;
+      cursor: pointer;
     }
 
     @include desktop {
       display: none;
-    }
-
-    &-menu {
-      @include tablet {
-        display: flex;
-        align-items: center;
-        gap: 4.2rem;
-      }
-    }
-
-    &-hamburger {
-      cursor: pointer;
-
-      @include tablet {
-        width: 1.6rem;
-        height: 1.5rem;
-        flex-shrink: 0;
-        cursor: pointer;
-      }
     }
   }
 
@@ -61,26 +33,24 @@ header {
     width: 14.3rem;
     height: 2.5rem;
     flex-shrink: 0;
+    justify-self: center;
     cursor: pointer;
+
+    @include tablet {
+      justify-self: flex-start;
+    }
   }
 
   &__desktop {
-    display: none;
-
-    @include desktop {
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 12.6rem;
-      border-bottom: 1px rgba($color: #ffffff, $alpha: 0.104) solid;
-    }
-
     &-menu {
-      display: flex;
-      list-style: none;
-      padding: 0;
-      gap: 3.4rem;
+      display: none;
+      @include desktop {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        gap: 3.4rem;
+        justify-self: center;
+      }
 
       &-link {
         color: #fff;
@@ -103,6 +73,14 @@ header {
           color: #d87d4a;
         }
       }
+    }
+  }
+  &__checkoutCart {
+    cursor: pointer;
+    justify-self: end;
+
+    @include tablet {
+      justify-self: flex-end;
     }
   }
 }
