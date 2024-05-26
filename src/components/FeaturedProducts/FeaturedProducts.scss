@@ -4,7 +4,9 @@
 
 .featuredProducts {
   @extend .container;
-
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
   &-largeCard {
     background-color: $main-color;
     border-radius: 0.8rem;
@@ -99,6 +101,22 @@
 
     &__button {
       @extend .button2--inverted;
+    }
+  }
+
+  &-mediumCard {
+    aspect-ratio: 1;
+    border-radius: 0.8rem;
+    background-image: url("../../assets/images/home/mobile/image-speaker-zx7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2.4rem;
+    gap: 3.2rem;
+    &__button {
+      @extend .button2;
     }
   }
 }

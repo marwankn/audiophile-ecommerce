@@ -32,6 +32,10 @@ const FeaturedProducts = () => {
           </div>
         </div>
       </div>
+      <div className="featuredProducts-mediumCard">
+        <h3 className="featuredProducts-mediumCard__title">zx7 speaker</h3>
+        <Link className="featuredProducts-mediumCard__button">See product</Link>
+      </div>
     </section>
   );
 };
