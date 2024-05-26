@@ -115,6 +115,15 @@
     justify-content: center;
     padding-left: 2.4rem;
     gap: 3.2rem;
+
+    @include tablet {
+      aspect-ratio: 12/4;
+      background-image: url("../../assets/images/home/tablet/image-speaker-zx7.jpg");
+      padding: 10rem;
+      padding-left: 6.2rem;
+      background-size: cover;
+      background-position: center;
+    }
     &__button {
       @extend .button2;
     }
