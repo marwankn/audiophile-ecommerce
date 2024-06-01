@@ -1,0 +1,21 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/media-queries" as *;
+@use "../../styles/partials/variables" as *;
+
+.categoriesPage {
+  &__hero {
+    background-color: $text-dark-color;
+
+    &-container {
+      @extend .container;
+      color: $text-light-color;
+      display: flex;
+      padding: 3.2rem 0;
+      justify-content: center;
+
+      @include tablet {
+        padding: 9.8rem 0;
+      }
+    }
+  }
+}
