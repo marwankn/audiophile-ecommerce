@@ -37,15 +37,37 @@
   @extend .subtitle;
   @extend .button;
 
-  background-color: $text-light-color;
   color: $text-dark-color;
   border: 1px solid $text-dark-color;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include desktop {
     &:hover {
       background-color: $text-dark-color;
       color: $text-light-color;
+    }
+  }
+
+  &--inverted {
+    @extend .subtitle;
+    @extend .button;
+
+    background-color: $text-dark-color;
+    color: $text-light-color;
+    border: 1px solid $text-dark-color;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include desktop {
+      &:hover {
+        background-color: $text-light-color;
+        color: $text-dark-color;
+      }
     }
   }
 }
