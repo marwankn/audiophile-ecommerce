@@ -153,10 +153,22 @@
     flex-direction: column;
     gap: 2.4rem;
 
+    @include tablet {
+      flex-direction: row;
+      gap: 1.1rem;
+      max-height: 32rem;
+    }
+
     &__image {
       content: url("../../assets/images/home/mobile/image-earphones-yx1.jpg");
       border-radius: 0.8rem;
       aspect-ratio: 16/9;
+
+      @include tablet {
+        content: url("../../assets/images/home/tablet/image-earphones-yx1.jpg");
+        width: calc(50% - 0.505rem);
+        aspect-ratio: 1;
+      }
     }
 
     &__textCard {
@@ -168,6 +180,12 @@
       padding-left: 2.4rem;
       gap: 3.2rem;
       aspect-ratio: 16/9;
+
+      @include tablet {
+        aspect-ratio: 1;
+        width: calc(50% - 0.505rem);
+        padding-left: 4.1rem;
+      }
     }
 
     &__button {
