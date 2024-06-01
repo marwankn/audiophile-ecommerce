@@ -34,7 +34,27 @@ const FeaturedProducts = () => {
       </div>
       <div className="featuredProducts-mediumCard">
         <h3 className="featuredProducts-mediumCard__title">zx7 speaker</h3>
-        <Link className="featuredProducts-mediumCard__button">See product</Link>
+        <Link
+          className="featuredProducts-mediumCard__button"
+          to={"/categories/speakers/zx7-speaker"}
+        >
+          See product
+        </Link>
+      </div>
+      <div className="featuredProducts-smallCards">
+        <img
+          alt="YX1 Earphones"
+          className="featuredProducts-smallCard__image"
+        />
+        <div className="featuredProducts-smallCard__textCard">
+          <h3>YX1 Earphones</h3>
+          <Link
+            to={"/categories/earphones/yx1-earphones"}
+            className="featuredProducts-smallCard__button"
+          >
+            See product
+          </Link>
+        </div>
       </div>
     </section>
   );
