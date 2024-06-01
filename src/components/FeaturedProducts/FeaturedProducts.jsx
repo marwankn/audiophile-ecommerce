@@ -44,13 +44,13 @@ const FeaturedProducts = () => {
       <div className="featuredProducts-smallCards">
         <img
           alt="YX1 Earphones"
-          className="featuredProducts-smallCard__image"
+          className="featuredProducts-smallCards__image"
         />
-        <div className="featuredProducts-smallCard__textCard">
+        <div className="featuredProducts-smallCards__textCard">
           <h3>YX1 Earphones</h3>
           <Link
             to={"/categories/earphones/yx1-earphones"}
-            className="featuredProducts-smallCard__button"
+            className="featuredProducts-smallCards__button"
           >
             See product
           </Link>
