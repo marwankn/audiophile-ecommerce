@@ -3,7 +3,7 @@
 @use "../../styles/partials/variables" as *;
 
 .hero {
-  background: url("../../assets/images/home/mobile/image-header.jpg") no-repeat;
+  background: url("/assets/images/home/mobile/image-header.jpg") no-repeat;
   background-size: cover;
   background-position-x: center;
   background-position: center;
@@ -14,14 +14,13 @@
   align-items: center;
 
   @include tablet {
-    background: url("../../assets/images/home/tablet/image-header.jpg")
-      no-repeat;
+    background: url("/assets/images/home/tablet/image-header.jpg") no-repeat;
     background-size: cover;
     background-position: center;
   }
 
   @include desktop {
-    background: url("../../assets/images/home/desktop/image-hero.jpg") no-repeat;
+    background: url("/assets/images/home/desktop/image-hero.jpg") no-repeat;
     background-size: 100vw;
     background-position: center;
   }

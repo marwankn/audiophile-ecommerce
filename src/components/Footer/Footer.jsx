@@ -1,9 +1,9 @@
 import React from "react";
 import "./Footer.scss";
-import logoPath from "../../assets/images/shared/desktop/logo.svg";
-import facebookIcon from "../../assets/images/shared/desktop/icon-facebook.svg";
-import twitterIcon from "../../assets/images/shared/desktop/icon-twitter.svg";
-import instagramIcon from "../../assets/images/shared/desktop/icon-instagram.svg";
+import logoPath from "/assets/images/shared/desktop/logo.svg";
+import facebookIcon from "/assets/images/shared/desktop/icon-facebook.svg";
+import twitterIcon from "/assets/images/shared/desktop/icon-twitter.svg";
+import instagramIcon from "/assets/images/shared/desktop/icon-instagram.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
