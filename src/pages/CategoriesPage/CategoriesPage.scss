@@ -22,4 +22,18 @@
 
 .productCards {
   @extend .container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12rem;
+  margin: 6.4rem auto 19.2rem;
+
+  @include tablet {
+    margin: 12rem auto;
+  }
+
+  @include desktop {
+    gap: 16rem;
+    margin: 16rem auto;
+  }
 }
