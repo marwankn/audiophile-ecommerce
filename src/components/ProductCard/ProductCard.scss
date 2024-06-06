@@ -1,3 +1,48 @@
 @use "../../styles/partials/global";
 @use "../../styles/partials/media-queries" as *;
 @use "../../styles/partials/variables" as *;
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  margin: 6.4rem auto 19.2rem;
+
+  &__image {
+    aspect-ratio: 1;
+    border-radius: 0.8rem;
+
+    @include tablet {
+      aspect-ratio: initial;
+    }
+  }
+
+  &__texts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__new {
+    @extend .overline;
+    color: $main-color;
+  }
+
+  &__title {
+    text-align: center;
+    width: 25rem;
+  }
+
+  &__description {
+    text-align: center;
+    max-width: 52rem;
+    opacity: 0.5;
+  }
+
+  &__button {
+    @extend .button1;
+  }
+}

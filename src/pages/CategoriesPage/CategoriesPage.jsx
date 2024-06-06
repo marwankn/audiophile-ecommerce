@@ -8,6 +8,10 @@ import FeaturedAboutUs from "../../components/FeaturedAboutUs/FeaturedAboutUs";
 
 const CategoriesPage = () => {
   const { category } = useParams();
+  const filteredProducts = data.filter(
+    (product) => product.category === category
+  );
+  const sortedProducts = filteredProducts.sort((a, b) => b.id - a.id);
 
   return (
     <>
@@ -17,10 +21,8 @@ const CategoriesPage = () => {
         </div>
       </section>
       <section className="productCards">
-        {data.map((product) => {
-          if (product.category === category) {
-            return <ProductCard product={product} key={product.id} />;
-          }
+        {sortedProducts.map((product) => {
+          return <ProductCard product={product} key={product.id} />;
         })}
       </section>
       <ProductCategories />
