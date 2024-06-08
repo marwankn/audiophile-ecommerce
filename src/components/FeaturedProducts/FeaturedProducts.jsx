@@ -1,7 +1,7 @@
 import React from "react";
 import "./FeaturedProducts.scss";
 import { Link } from "react-router-dom";
-import patternCircle from "../../assets/images/home/desktop/pattern-circles.svg";
+import patternCircle from "/assets/images/home/desktop/pattern-circles.svg";
 
 const FeaturedProducts = () => {
   return (

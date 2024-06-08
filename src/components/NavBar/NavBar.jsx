@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./NavBar.scss";
-import logo from "../../assets/images/shared/desktop/logo.svg";
-import hamburgerMenu from "../../assets/images/shared/tablet/icon-hamburger.svg";
-import checkoutCart from "../../assets/images/shared/desktop/icon-cart.svg";
+import logo from "/assets/images/shared/desktop/logo.svg";
+import hamburgerMenu from "/assets/images/shared/tablet/icon-hamburger.svg";
+import checkoutCart from "/assets/images/shared/desktop/icon-cart.svg";
 import NavDropdownMenu from "../NavDropdownMenu/NavDropdownMenu";
 
 const NavBar = () => {
@@ -30,7 +30,9 @@ const NavBar = () => {
             onClick={() => setMenu(!menu)}
             className="navBar__hamburger-menu"
           />
-          <img src={logo} alt="Audiophile Logo" className="navBar__logo" />
+          <Link to="/" className="navBar__logo">
+            <img src={logo} alt="Audiophile Logo" />
+          </Link>
           <ul className="navBar__desktop-menu">
             <li>
               <NavLink

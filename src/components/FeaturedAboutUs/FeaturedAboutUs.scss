@@ -17,15 +17,15 @@
   }
 
   &__image {
-    content: url("../../assets/images/shared/mobile/image-best-gear.jpg");
+    content: url("/assets/images/shared/mobile/image-best-gear.jpg");
     border-radius: 0.8rem;
 
     @include tablet {
-      content: url("../../assets/images/shared/tablet/image-best-gear.jpg");
+      content: url("/assets/images/shared/tablet/image-best-gear.jpg");
     }
 
     @include desktop {
-      content: url("../../assets/images/shared/desktop/image-best-gear.jpg");
+      content: url("/assets/images/shared/desktop/image-best-gear.jpg");
     }
   }
 
