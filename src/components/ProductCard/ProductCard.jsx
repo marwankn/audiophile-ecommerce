@@ -7,7 +7,7 @@ const ProductCard = ({ product }) => {
     <div className="productCard" id={product.id}>
       <picture>
         <source
-          media="(min-width: 1024px)"
+          media="(min-width: 1280px)"
           srcSet={product.categoryImage.desktop}
         />
         <source

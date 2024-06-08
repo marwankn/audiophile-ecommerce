@@ -12,12 +12,26 @@
     gap: 5.2rem;
   }
 
+  @include desktop {
+    flex-direction: row;
+    gap: 12.8rem;
+
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
   &__image {
     aspect-ratio: 1;
     border-radius: 0.8rem;
 
     @include tablet {
       aspect-ratio: initial;
+    }
+
+    @include desktop {
+      max-height: 56rem;
+      aspect-ratio: 1;
     }
   }
 
@@ -27,9 +41,15 @@
     gap: 2.4rem;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     @include tablet {
       gap: 3.2rem;
+    }
+
+    @include desktop {
+      align-items: flex-start;
+      text-align: left;
     }
   }
 
@@ -39,12 +59,10 @@
   }
 
   &__title {
-    text-align: center;
     width: 25rem;
   }
 
   &__description {
-    text-align: center;
     max-width: 52rem;
     opacity: 0.5;
   }
