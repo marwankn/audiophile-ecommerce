@@ -2,16 +2,16 @@
   {
     "id": 1,
     "category": "headphones",
-    "imgPath": "/public/assets/images/shared/desktop/image-category-thumbnail-headphones.png"
+    "imgPath": "/assets/images/shared/desktop/image-category-thumbnail-headphones.png"
   },
   {
     "id": 2,
     "category": "speakers",
-    "imgPath": "/public/assets/images/shared/desktop/image-category-thumbnail-speakers.png"
+    "imgPath": "/assets/images/shared/desktop/image-category-thumbnail-speakers.png"
   },
   {
     "id": 3,
     "category": "earphones",
-    "imgPath": "/public/assets/images/shared/desktop/image-category-thumbnail-earphones.png"
+    "imgPath": "/assets/images/shared/desktop/image-category-thumbnail-earphones.png"
   }
 ]
